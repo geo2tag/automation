@@ -1,4 +1,4 @@
 automation
 ==========
 
-Automation tools and templates
+Automation tools and templates.
