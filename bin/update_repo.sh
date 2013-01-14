@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-INCOMING=/opt/files/
+INCOMING=/opt/repo/incoming
 
 cp ../*.dsc     ${INCOMING}/
 cp ../*.tar.gz  ${INCOMING}/
