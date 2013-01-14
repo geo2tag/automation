@@ -9,5 +9,7 @@ echo "  - Build atrifacts list -"
 ls -la ../
 
 
-cp ../*     ${INCOMING}/
+cp ../geo2tag-* ${INCOMING}/
+
+exit 0
 
