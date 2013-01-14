@@ -2,6 +2,6 @@
 
 find ./ -name test.suite | xargs rm
 
-dpkg-buildpackage -rfakeroot --jobs=5
+./auto/bin/build_package.sh
 
 cat ./test_summary.log
