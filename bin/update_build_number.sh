@@ -13,7 +13,7 @@ fi
 
 OLD_BUILD=`cat ${DIR}/build`
 BUILD=`echo ${OLD_BUILD} +1 | bc`
-echo "New build is ${BUILD}"
+echo "New build is [${BUILD}]"
 echo ${BUILD} >${DIR}/build
 
 

@@ -9,7 +9,5 @@ echo "  - Build atrifacts list -"
 ls -la ../
 
 
-cp ../*.dsc     ${INCOMING}/
-cp ../*.tar.gz  ${INCOMING}/
-cp ../*.deb gz  ${INCOMING}/
+cp ../*     ${INCOMING}/
 
