@@ -2,6 +2,7 @@
 
 find ./ -name test.suite | xargs rm
 
-./auto/bin/build_package.sh
+make distclean
+qmake
+make -j10
 
-cat ./test_summary.log
