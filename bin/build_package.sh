@@ -2,7 +2,7 @@
 
 ./auto/bin/update_build_number.sh
 
-echo `git rev-parse HEAD` >>./HEAD
+echo `git rev-parse HEAD` >./HEAD
 
 
 dch --force-bad-version --local .`hostname`-`cat /opt/files/build`. "Built on `uname -a` at `date`"
