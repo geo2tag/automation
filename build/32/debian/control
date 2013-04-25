@@ -6,6 +6,6 @@ Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 
 Package: geo2tag-build-environment
-Architecture: all
+Architecture: i386 
 Depends: ${misc:Depends}, build-essential, libqt4-dev, debhelper, qt4-qmake, libxml2-dev, libqjson-dev, libfcgi-dev, libpq-dev, reprepro, nginx
 Description: build environment for geo2tag core
