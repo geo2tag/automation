@@ -7,5 +7,5 @@ Standards-Version: 3.9.2
 
 Package: geo2tag-build-environment
 Architecture: all
-Depends: ${misc:Depends}, build-essential, libqt4-dev, debhelper, qt4-qmake, libxml2-dev, libqjson-dev, libfcgi-dev, libpq-dev, reprepo, nginx
+Depends: ${misc:Depends}, build-essential, libqt4-dev, debhelper, qt4-qmake, libxml2-dev, libqjson-dev, libfcgi-dev, libpq-dev, reprepro, nginx
 Description: build environment for geo2tag core
