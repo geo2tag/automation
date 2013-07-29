@@ -1,0 +1,11 @@
+Source: geo2tag-db
+Section: devel
+Priority: extra
+Maintainer: Mark Zaslavskiy <mark.zaslavskiy>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+
+Package: geo2tag-db
+Architecture: any
+Depends: ${misc:Depends}, postgresql (>=8.4), postgresql-client
+Description: db for geo2tag core
