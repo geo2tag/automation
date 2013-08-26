@@ -3,4 +3,5 @@
 cp /opt/default /opt/vhost-packages.conf /etc/nginx/sites-available/
 cp /opt/vhost-packages.conf /etc/nginx/sites-enabled/
 rm /etc/nginx/sites-enabled/default || true
+ln -s /etc/nginx/sites-available/vhost-packages.conf /etc/nginx/sites-enabled/
 /etc/init.d/nginx restart
