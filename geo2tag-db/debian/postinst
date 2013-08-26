@@ -1,0 +1,33 @@
+#!/bin/bash
+
+TIME=`date +%Y%m%d%H%M%S`;
+DB_NAME="geo2tag${TIME}";
+isUserExists=`sudo -u postgres psql postgres -tAc "SELECT 1 FROM pg_roles WHERE rolname='geo2tag'"`;
+
+echo "DB_NAME=$DB_NAME"
+echo "isUserExists=$isUserExists"
+
+create_db_user()
+{
+        sudo -u postgres createuser -s geo2tag
+
+        sudo -u postgres psql --command="ALTER USER geo2tag WITH PASSWORD 'geo2tag';"
+}
+
+create_db() {
+        sudo -u postgres createdb -O geo2tag ${DB_NAME}
+        sudo -u postgres psql --command="GRANT ALL privileges on database ${DB_NAME} to geo2tag;"
+        psql ${DB_NAME} -U geo2tag < /opt/geo2tag/db/base.sql
+}
+
+
+if [[ -n "$isUserExists" ]] 
+then
+        echo "User exists"
+else 
+        echo "User does not exist"
+        create_db_user
+fi
+
+create_db
+
