@@ -8,6 +8,6 @@ fi
 
 SUBREPO=$1
 
-echo "Do: ssh zmm@build64.geo2tag.org sudo /opt/repo/import_packages.sh ${SUBREPO}"
+echo "Do: ssh deployuser@download.geo2tag.org sudo /opt/repo/import_packages.sh ${SUBREPO}"
 
-ssh zmm@build64.geo2tag.org sudo /opt/repo/import_packages.sh ${SUBREPO}
+ssh deployuser@download.geo2tag.org sudo /opt/repo/import_packages.sh ${SUBREPO}

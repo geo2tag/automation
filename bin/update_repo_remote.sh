@@ -8,7 +8,7 @@ fi
 
 SUBREPO=$1
 
-INCOMING=zmm@build64.geo2tag.org:/opt/repo/incoming_${SUBREPO}
+INCOMING=deployuser@download.geo2tag.org:/opt/repo/incoming_${SUBREPO}
 
 echo "# Package deploying info:"
 echo "  - Incoming folder: ${INCOMING}"
