@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if [ $# -ne "1" ]
+if [ $# -ne "2" ]
 then
-  echo "Usage: ./update_repo_remote.sh [testing|stable]"
+  echo "Usage: ./update_repo_remote.sh [testing|stable] user@hostname"
   exit 1
 fi
 
 SUBREPO=$1
-
-INCOMING=deployuser@download.geo2tag.org:/opt/repo/incoming_${SUBREPO}
+SSH_STRING=$2
+INCOMING=${SSH_STRING}:/opt/repo/incoming_${SUBREPO}
 
 echo "# Package deploying info:"
 echo "  - Incoming folder: ${INCOMING}"
