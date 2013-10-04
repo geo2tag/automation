@@ -17,7 +17,7 @@ create_db_user()
 create_db() {
         sudo -u postgres createdb -O geo2tag ${DB_NAME}
         sudo -u postgres psql --command="GRANT ALL privileges on database ${DB_NAME} to geo2tag;"
-        psql ${DB_NAME} -U geo2tag < /opt/geo2tag/db/base.sql
+        psql ${DB_NAME} -U geo2tag < /opt/geo2tag/base.sql
 }
 
 
