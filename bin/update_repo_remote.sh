@@ -16,7 +16,7 @@ echo "  - Build atrifacts list -"
 ls -la ../
 
 
-scp ../geo2tag-* ${INCOMING}/
+scp ../geo2tag-*.deb ../geo2tag-*.changes ../geo2tag-*.dsc ${INCOMING}/
 
 
 exit 0
