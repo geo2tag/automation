@@ -2,7 +2,7 @@
 
 ./auto/bin/update_build_number.sh
 
-!ln -s ./3rdparty/libriak ./src/
+ln -s ./3rdparty/libriak ./src/ || true
 
 echo `git rev-parse HEAD` >./HEAD
 
