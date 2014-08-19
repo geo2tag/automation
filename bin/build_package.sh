@@ -6,5 +6,5 @@
 echo `git rev-parse HEAD` >./HEAD
 
 
-dch .`cat /opt/files/build`.`hostname`
+dch --local .`cat /opt/files/build`.`hostname` "Auto build at `date` `time` on `hostname` "
 dpkg-buildpackage -rfakeroot -j10 -us -uc 
