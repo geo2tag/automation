@@ -6,5 +6,5 @@
 echo `git rev-parse HEAD` >./HEAD
 
 
-dch --force-bad-version --local .`cat /opt/files/build`.`hostname` "Built on `uname -a` at `date`"
+dch .`cat /opt/files/build`.`hostname`
 dpkg-buildpackage -rfakeroot -j10 -us -uc 
